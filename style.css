@@ -4,16 +4,84 @@
     font-family: 'Inter', sans-serif;
 }
 
+/* Couleurs LASD personnalisées */
+.lasd-primary {
+    background-color: #354f52;
+}
+
+.lasd-secondary {
+    background-color: #52796f;
+}
+
+.lasd-accent {
+    background-color: #84a98c;
+}
+
+.lasd-light {
+    background-color: #cad2c5;
+}
+
+.text-lasd-primary {
+    color: #354f52;
+}
+
+.text-lasd-secondary {
+    color: #52796f;
+}
+
+.text-lasd-accent {
+    color: #84a98c;
+}
+
+.text-lasd-light {
+    color: #cad2c5;
+}
+
+.border-lasd-primary {
+    border-color: #354f52;
+}
+
+.border-lasd-secondary {
+    border-color: #52796f;
+}
+
+.border-lasd-accent {
+    border-color: #84a98c;
+}
+
+.hover-lasd-primary:hover {
+    background-color: #2f454a;
+}
+
+.hover-lasd-secondary:hover {
+    background-color: #476863;
+}
+
+.hover-text-lasd-accent:hover {
+    color: #84a98c !important;
+}
+
+.bg-gradient-lasd {
+    background: linear-gradient(135deg, #354f52 0%, #52796f 100%);
+}
+
+.text-gradient-lasd {
+    background: linear-gradient(135deg, #84a98c 0%, #52796f 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
 .gradient-bg {
-    background: linear-gradient(135deg, #2c6b3d 0%, #4d8a5e 50%, #729f6d 100%); /* Vert et beige */
+    background: linear-gradient(135deg, #1b4332 0%, #2d5a42 50%, #52796f 100%); /* Vert LASD authentique */
 }
 
 .police-gradient {
-    background: linear-gradient(135deg, #a3d2ca 0%, #6b8e23 100%); /* Vert clair et vert foncé */
+    background: linear-gradient(135deg, #52796f 0%, #354f52 100%); /* Vert LASD dégradé */
 }
 
 .glow-effect {
-    box-shadow: 0 0 30px rgba(34, 139, 34, 0.3); /* Lumière verte */
+    box-shadow: 0 0 30px rgba(82, 121, 111, 0.4); /* Lumière vert LASD */
 }
 
 .floating {
@@ -46,10 +114,10 @@
 
 @keyframes pulse-glow {
     0%, 100% {
-        box-shadow: 0 0 20px rgba(34, 139, 34, 0.5);
+        box-shadow: 0 0 20px rgba(82, 121, 111, 0.5);
     }
     50% {
-        box-shadow: 0 0 40px rgba(34, 139, 34, 0.8);
+        box-shadow: 0 0 40px rgba(82, 121, 111, 0.8);
     }
 }
 
@@ -92,7 +160,7 @@
 }
 
 .typing-effect {
-    border-right: 2px solid #6b8e23; /* Vert foncé */
+    border-right: 2px solid #354f52; /* Vert LASD foncé */
     animation: typing 3s steps(30, end), blink 1s infinite;
 }
 
@@ -110,7 +178,7 @@
         border-color: transparent;
     }
     51%, 100% {
-        border-color: #6b8e23;
+        border-color: #354f52;
     }
 }
 
@@ -154,7 +222,7 @@
 .custom-cursor {
     width: 20px;
     height: 20px;
-    border: 2px solid #6b8e23; /* Vert foncé */
+    border: 2px solid #354f52; /* Vert LASD foncé */
     border-radius: 50%;
     position: fixed;
     pointer-events: none;
@@ -165,7 +233,7 @@
 
 .custom-cursor.cursor-hover {
     transform: scale(1.5);
-    background: rgba(34, 139, 34, 0.2);
+    background: rgba(82, 121, 111, 0.2);
 }
 
 .scroll-progress {
@@ -174,7 +242,7 @@
     left: 0;
     width: 0%;
     height: 3px;
-    background: linear-gradient(90deg, #6b8e23, #3e5d42); /* Vert et beige */
+    background: linear-gradient(90deg, #354f52, #52796f); /* Vert LASD dégradé */
     z-index: 9999;
     transition: width 0.3s ease;
 }
@@ -189,7 +257,7 @@ body:not(.loaded) {
 }
 
 .hover-glow:hover {
-    box-shadow: 0 0 30px rgba(34, 139, 34, 0.6); /* Lumière verte */
+    box-shadow: 0 0 30px rgba(82, 121, 111, 0.6); /* Lumière vert LASD */
     transform: translateY(-2px);
 }
 
@@ -239,7 +307,7 @@ body:not(.loaded) {
 
 .team {
     padding: 80px 0;
-    background: linear-gradient(135deg, #2c6b3d 0%, #4d8a5e 50%, #729f6d 100%); /* Vert et beige */
+    background: linear-gradient(135deg, #1b4332 0%, #2d5a42 50%, #52796f 100%); /* Vert LASD authentique */
     position: relative;
     overflow: hidden;
 }
@@ -251,8 +319,8 @@ body:not(.loaded) {
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle at 30% 20%, rgba(34, 139, 34, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 70% 80%, rgba(30, 64, 175, 0.1) 0%, transparent 50%);
+    background: radial-gradient(circle at 30% 20%, rgba(82, 121, 111, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 70% 80%, rgba(53, 79, 82, 0.1) 0%, transparent 50%);
     pointer-events: none;
 }
 
@@ -279,7 +347,7 @@ body:not(.loaded) {
     transform: translateX(-50%);
     width: 80px;
     height: 4px;
-    background: linear-gradient(90deg, #6b8e23, #3e5d42);
+    background: linear-gradient(90deg, #354f52, #52796f);
     border-radius: 2px;
 }
 
@@ -310,4 +378,5 @@ body:not(.loaded) {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg,
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+}
