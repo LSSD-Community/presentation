@@ -1,0 +1,98 @@
+/** Administration Roles **/
+
+.administration-manager-border {
+    border-color: #992d22;
+}
+
+.administration-manager-color {
+    color: #992d22;
+}
+
+.administrator-border {
+    border-color: #b94d42;
+}
+
+.administrator-color {
+    color: #b94d42;
+}
+
+.moderator-border {
+    border-color: #d96d62;
+}
+
+.moderator-color {
+    color: #d96d62;
+}
+
+
+/** Technical Roles **/
+
+.technical-manager-border {
+    border-color: #71368a;
+}
+
+.technical-manager-color {
+    color: #71368a;
+}
+
+.game-designer-border {
+    border-color: #ad1457;
+}
+
+.game-designer-color {
+    color: #ad1457;
+}
+
+.developer-border {
+    border-color: #9156aa;
+}
+
+.developer-color {
+    color: #9156aa;
+}
+
+.texture-artist-border {
+    border-color: #71368a;
+}
+
+.texture-artist-color {
+    color: #71368a;
+}
+
+
+/** Financial Roles **/
+
+.financial-manager-border {
+    border-color: #f1c40f;
+}
+
+.financial-manager-color {
+    color: #f1c40f;
+}
+
+
+/** Community Roles **/
+
+.community-manager-border {
+    border-color: #2ecc71;
+}
+
+.community-manager-color {
+    color: #2ecc71;
+}
+
+.streamer-border {
+    border-color: #3b2077;
+}
+
+.streamer-color {
+    color: #3b2077;
+}
+
+.friendly-member-border {
+    border-color: #f1c40f;
+}
+
+.friendly-member-color {
+    color: #f1c40f;
+}
