@@ -13,6 +13,7 @@
     <script src="scripts/copyright.js" defer></script>
     <script src="scripts/discord.js" defer></script>
     <script src="scripts/cfx.js" defer></script>
+    <script src="scripts/countdown.js" defer></script>
 </head>
 
 
@@ -214,7 +215,7 @@
                     Bienvenue à tous les amateurs et puristes de roleplay !
                 </p>
             </div>
-            <div> <!--class="grid md:grid-cols-2 gap-12 items-center"-->
+            <div class="grid md:grid-cols-2 gap-12 items-center"> <!--class="grid md:grid-cols-2 gap-12 items-center"-->
                 <div class="fade-in">
                     <div class="glass-effect rounded-2xl p-8 hover-scale">
                         <h3 class="text-2xl font-semibold mb-6 text-lasd-accent">Notre mission</h3>
@@ -249,6 +250,40 @@
                                     <p class="text-gray-400 text-sm">
                                         Partagez vos meilleures photos et vidéos.
                                     </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fade-in">
+                    <div class="relative">
+                        <div class="absolute inset-0 lasd-secondary rounded-2xl blur-xl opacity-30"></div>
+                        <div class="relative bg-gray-900 rounded-2xl p-8 border border-lasd-secondary/20">
+                            <div class="text-center mb-6">
+                                <div
+                                    class="w-16 h-16 lasd-primary rounded-full flex items-center justify-center mx-auto mb-4 pulse-glow">
+                                    <span class="text-2xl">🎯</span>
+                                </div>
+                                <h3 class="text-xl font-semibold text-lasd-accent">
+                                    Ouverture du serveur FiveM dans
+                                </h3>
+                            </div>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="text-center p-4 bg-gray-800 rounded-lg">
+                                    <div class="text-2xl font-bold text-lasd-accent" id="days-count">∞</div>
+                                    <div class="text-sm text-gray-400">Jours</div>
+                                </div>
+                                <div class="text-center p-4 bg-gray-800 rounded-lg">
+                                    <div class="text-2xl font-bold text-green-400" id="hours-count"></div>
+                                    <div class="text-sm text-gray-400">Heures</div>
+                                </div>
+                                <div class="text-center p-4 bg-gray-800 rounded-lg">
+                                    <div class="text-2xl font-bold text-purple-400" id="minutes-count">N/A</div>
+                                    <div class="text-sm text-gray-400">Minutes</div>
+                                </div>
+                                <div class="text-center p-4 bg-gray-800 rounded-lg">
+                                    <div class="text-2xl font-bold text-orange-400" id="seconds-count">N/A</div>
+                                    <div class="text-sm text-gray-400">Secondes</div>
                                 </div>
                             </div>
                         </div>
