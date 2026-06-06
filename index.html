@@ -13,6 +13,7 @@
     <script src="scripts/copyright.js" defer></script>
     <script src="scripts/discord.js" defer></script>
     <script src="scripts/cfx.js" defer></script>
+    <script src="scripts/countdown.js" defer></script>
 </head>
 
 
@@ -24,7 +25,7 @@
                     <div class="flex-shrink-0 flex items-center">
                         <div class="w-10 h-10 rounded-full flex items-center justify-center mr-3 pulse-glow" style="background-color: #354f52;">
                             <img
-                                src="ade033f6aa026c0100098168b0404193.png"
+                                src="logo.png"
                                 alt="Logo du serveur"
                                 class="w-full h-full object-cover rounded-full"
                             >
@@ -35,43 +36,46 @@
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4">
                         <a
-                            href="#accueil"
-                            class="text-gray-300 px-3 py-2 rounded-md text-sm font-medium transition-colors"
-                            style="color: #e2e8f0;"
-                            onmouseover="this.style.color='#84a98c'"
-                            onmouseout="this.style.color='#e2e8f0'"
+                            href="/#accueil"
+                            class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors"
                         >
                             Accueil
                         </a>
                         <a
-                            href="#presentation"
+                            href="/#presentation"
                             class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors"
                         >
                             Présentation
                         </a>
                         <a
-                            href="#vision"
+                            href="/#vision"
                             class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors"
                         >
                             Vision du serveur
                         </a>
                         <a
-                            href="#etapes"
+                            href="/#etapes"
                             class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors"
                         >
                             Étapes du projet
                         </a>
                         <a
-                            href="#team"
+                            href="/#team"
                             class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors"
                         >
                             Équipe
                         </a>
                         <a
-                            href="#contact"
+                            href="/#contact"
                             class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors"
                         >
                             Contact
+                        </a>
+                        <a
+                            href="/rules"
+                            class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                        >
+                            Règlement
                         </a>
                         <!--<a
                             href="https://mdt.lssd-community.cozedev.com/"
@@ -96,20 +100,48 @@
         </div>
         <div id="mobile-menu" class="md:hidden hidden glass-effect">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a href="#accueil"
-                    class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors">Accueil</a>
-                <a href="#presentation"
-                    class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors">Présentation</a>
-                <a href="#vision"
-                    class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors">Vision</a>
-                <a href="#etapes"
-                    class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors">Étapes</a>
-                <a href="#contact"
-                    class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
-                <a href="https://mdt.lssd-community.cozedev.com/"
-                    class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors">MDT</a>
-                <a href="#team"
-                    class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors">Équipe</a>
+                <a
+                    href="/#accueil"
+                    class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                >
+                    Accueil
+                </a>
+                <a
+                    href="/#presentation"
+                    class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                >
+                    Présentation
+                </a>
+                <a
+                    href="/#vision"
+                    class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                >
+                    Vision
+                </a>
+                <a
+                    href="/#etapes"
+                    class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                >
+                    Étapes
+                </a>
+                <a
+                    href="/#contact"
+                    class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                >
+                    Contact
+                </a>
+                <a
+                    href="/#team"
+                    class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                >
+                    Équipe
+                </a>
+                <a 
+                    href="/rules"
+                    class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                >
+                    Règlement
+                </a>
             </div>
         </div>
     </nav>
@@ -132,7 +164,7 @@
                         class="w-24 h-24 lasd-primary rounded-full flex items-center justify-center mx-auto mb-6 glow-effect overflow-hidden"
                     >
                         <img
-                            src="ade033f6aa026c0100098168b0404193.png"
+                            src="logo.png"
                             alt="Logo de LSSD Community"
                             class="w-full h-full object-cover"
                         />
@@ -172,7 +204,7 @@
             </div>
         </div>
     </section>
-    <section id="presentation" class="py-20 bg-gray-800">
+    <section id="presentation" class="py-20 bg-gray-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 fade-in">
                 <h2
@@ -183,7 +215,7 @@
                     Bienvenue à tous les amateurs et puristes de roleplay !
                 </p>
             </div>
-            <div> <!--class="grid md:grid-cols-2 gap-12 items-center"-->
+            <div class="grid md:grid-cols-2 gap-12 items-center"> <!--class="grid md:grid-cols-2 gap-12 items-center"-->
                 <div class="fade-in">
                     <div class="glass-effect rounded-2xl p-8 hover-scale">
                         <h3 class="text-2xl font-semibold mb-6 text-lasd-accent">Notre mission</h3>
@@ -218,6 +250,40 @@
                                     <p class="text-gray-400 text-sm">
                                         Partagez vos meilleures photos et vidéos.
                                     </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fade-in">
+                    <div class="relative">
+                        <div class="absolute inset-0 lasd-secondary rounded-2xl blur-xl opacity-30"></div>
+                        <div class="relative bg-gray-900 rounded-2xl p-8 border border-lasd-secondary/20">
+                            <div class="text-center mb-6">
+                                <div
+                                    class="w-16 h-16 lasd-primary rounded-full flex items-center justify-center mx-auto mb-4 pulse-glow">
+                                    <span class="text-2xl">🎯</span>
+                                </div>
+                                <h3 class="text-xl font-semibold text-lasd-accent">
+                                    Ouverture du serveur FiveM dans
+                                </h3>
+                            </div>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="text-center p-4 bg-gray-800 rounded-lg">
+                                    <div class="text-2xl font-bold text-lasd-accent" id="days-count">∞</div>
+                                    <div class="text-sm text-gray-400">Jours</div>
+                                </div>
+                                <div class="text-center p-4 bg-gray-800 rounded-lg">
+                                    <div class="text-2xl font-bold text-green-400" id="hours-count"></div>
+                                    <div class="text-sm text-gray-400">Heures</div>
+                                </div>
+                                <div class="text-center p-4 bg-gray-800 rounded-lg">
+                                    <div class="text-2xl font-bold text-purple-400" id="minutes-count">N/A</div>
+                                    <div class="text-sm text-gray-400">Minutes</div>
+                                </div>
+                                <div class="text-center p-4 bg-gray-800 rounded-lg">
+                                    <div class="text-2xl font-bold text-orange-400" id="seconds-count">N/A</div>
+                                    <div class="text-sm text-gray-400">Secondes</div>
                                 </div>
                             </div>
                         </div>
@@ -258,7 +324,7 @@
             </div>
         </div>
     </section>
-    <section id="vision" class="py-20 bg-gray-900">
+    <section id="vision" class="py-20 bg-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 fade-in">
                 <h2
@@ -307,19 +373,87 @@
             </div>
         </div>
     </section>
-    <section id="etapes" class="py-20 bg-gray-800">
+    <section id="etapes" class="py-20 bg-gray-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 fade-in">
                 <h2
                     class="text-4xl font-bold mb-4 text-gradient-lasd">
-                    🎯 Étapes du Projet
+                    🎯 Étapes du projet
                 </h2>
                 <p class="text-xl text-gray-300 max-w-3xl mx-auto">
                     Notre roadmap pour créer la meilleure expérience FivePD
                 </p>
             </div>
 
-            <div class="relative">
+            <div class="grid gap-8 md:hidden">
+                <div class="fade-in hover-lift">
+                    <div class="glass-effect rounded-2xl p-8 h-full">
+                        <div class="w-12 h-12 lasd-primary rounded-full flex items-center justify-center mb-6 mx-auto">
+                            <span class="text-xl">📢</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4 text-center text-lasd-accent">
+                            Ouverture du serveur Discord
+                        </h3>
+                        <p class="text-gray-300 text-center">
+                            Nous avons commencé par ouvrir le serveur Discord pour rassembler une communauté active.
+                        </p>
+                    </div>
+                </div>
+                <div class="fade-in hover-lift">
+                    <div class="glass-effect rounded-2xl p-8 h-full">
+                        <div class="w-12 h-12 lasd-primary rounded-full flex items-center justify-center mb-6 mx-auto">
+                            <span class="text-xl">🌐</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4 text-center text-lasd-accent">
+                            Création du site de présentation
+                        </h3>
+                        <p class="text-gray-300 text-center">
+                            Nous avons ensuite mis en place un site de présentation pour partager notre vision, présenter le projet et tenir la communauté informée de son évolution.
+                        </p>
+                    </div>
+                </div>
+                <div class="fade-in hover-lift">
+                    <div class="glass-effect rounded-2xl p-8 h-full">
+                        <div class="w-12 h-12 lasd-primary rounded-full flex items-center justify-center mb-6 mx-auto">
+                            <span class="text-xl">⚒️</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4 text-center text-lasd-accent">
+                            Développement du serveur FiveM
+                        </h3>
+                        <p class="text-gray-300 text-center">
+                            Le développement du serveur FiveM nous permet de construire, petit à petit, tous les systèmes, véhicules et tenues nécessaires pour proposer une expérience réaliste et immersive.
+                        </p>
+                    </div>
+                </div>
+                <div class="fade-in hover-lift">
+                    <div class="glass-effect rounded-2xl p-8 h-full">
+                        <div class="w-12 h-12 lasd-primary rounded-full flex items-center justify-center mb-6 mx-auto">
+                            <span class="text-xl">🎮</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4 text-center text-gray-500">
+                            Ouverture du serveur de jeu
+                        </h3>
+                        <p class="text-gray-500 text-center">
+                            Par la suite, le serveur ouvrira ses portes afin d’accueillir les joueurs dans un environnement stable, structuré et pensé pour un roleplay immersif.
+                        </p>
+                    </div>
+                </div>
+                <div class="fade-in hover-lift">
+                    <div class="glass-effect rounded-2xl p-8 h-full">
+                        <div class="w-12 h-12 lasd-primary rounded-full flex items-center justify-center mb-6 mx-auto">
+                            <span class="text-xl">📈</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4 text-center text-gray-500">
+                            Atteindre la perfection
+                        </h3>
+                        <p class="text-gray-500 text-center">
+                            Dans la foulée, le projet continuera d’évoluer après son ouverture, avec des améliorations régulières, de nouvelles fonctionnalités et une volonté constante de proposer l’expérience la plus aboutie possible.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative hidden md:block">
                 <div
                     class="absolute left-1/2 transform -translate-x-1/2 w-1 h-full lasd-secondary rounded-full opacity-30">
                 </div>
@@ -448,60 +582,57 @@
     </section>
 
 
-    <section id="team" class="team reveal bg-gray-900 py-16">
+    <section id="team" class="reveal bg-gray-800 py-16">
         <div class="container mx-auto px-6 text-center">
-            <h2
-                class="text-center mb-16 fade-in visible">
-                <span
+            <div class="text-center mb-16 fade-in">
+                <h2
                     class="text-4xl font-bold mb-4 text-gradient-lasd">
-                    Équipe
-                </span>
-
-            </h2>
-
-
-
-
+                    👥 Équipe
+                </h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Une équipe passionnée et dévouée pour faire de ce projet une réussite
+                </p>
+            </div>
 
             <div class="flex flex-wrap justify-center gap-12">
                 <div
-                    class="team-member bg-gray-800 rounded-3xl p-8 shadow-lg max-w-xs w-full hover:scale-105 transition-transform duration-300">
+                    class="fade-in hover-lift team-member glass-effect rounded-3xl p-8 shadow-lg max-w-xs w-full hover:scale-105 transition-transform duration-300">
                     <img src="https://storage.googleapis.com/cloud-opennews-media/members/odran.png" alt="Avatar d'Odran"
-                        class="mx-auto rounded-full w-40 h-40 object-cover mb-6 border-4 financial-manager-border">
-                    <h3 class="text-2xl font-semibold text-white mb-2">Odran</h3>
-                    <p class="financial-manager-color text-lg font-medium">Responsable financier & communication</p>
+                        class="mx-auto rounded-full w-40 h-40 object-cover mb-6 border-4 border-gray-600">
+                    <h3 class="text-2xl font-semibold text-lasd-accent mb-2">Odran</h3>
+                    <p class="text-gray-300 text-lg font-medium">Responsable financier & communication</p>
                 </div>
 
                 <div
-                    class="team-member bg-gray-800 rounded-3xl p-8 shadow-lg max-w-xs w-full hover:scale-105 transition-transform duration-300">
+                    class="fade-in hover-liftteam-member glass-effect rounded-3xl p-8 shadow-lg max-w-xs w-full hover:scale-105 transition-transform duration-300">
                     <img src="https://storage.googleapis.com/cloud-opennews-media/members/seb.png" alt="Avatar de Seb"
-                        class="mx-auto rounded-full w-40 h-40 object-cover mb-6 border-4 technical-manager-border">
-                    <h3 class="text-2xl font-semibold text-white mb-2">Seb</h3>
-                    <p class="technical-manager-color text-lg font-medium">Responsable technique</p>
+                        class="mx-auto rounded-full w-40 h-40 object-cover mb-6 border-4 border-gray-600">
+                    <h3 class="text-2xl font-semibold text-lasd-accent mb-2">Seb</h3>
+                    <p class="text-gray-300 text-lg font-medium">Responsable technique</p>
                 </div>
 
                 <div
-                    class="team-member bg-gray-800 rounded-3xl p-8 shadow-lg max-w-xs w-full hover:scale-105 transition-transform duration-300">
+                    class="fade-in hover-liftteam-member glass-effect rounded-3xl p-8 shadow-lg max-w-xs w-full hover:scale-105 transition-transform duration-300">
                     <img src="https://storage.googleapis.com/cloud-opennews-media/members/lyrriiuse.png" alt="Avatar de LyrRiiuSe"
-                        class="mx-auto rounded-full w-40 h-40 object-cover mb-6 border-4 game-designer-border">
-                    <h3 class="text-2xl font-semibold text-white mb-2">LyrRiiuSe</h3>
-                    <p class="game-designer-color text-lg font-medium">Game Designer</p>
+                        class="mx-auto rounded-full w-40 h-40 object-cover mb-6 border-4 border-gray-600">
+                    <h3 class="text-2xl font-semibold text-lasd-accent mb-2">LyrRiiuSe</h3>
+                    <p class="text-gray-300 text-lg font-medium">Game Designer</p>
                 </div>
 
                 <div
-                    class="team-member bg-gray-800 rounded-3xl p-8 shadow-lg max-w-xs w-full hover:scale-105 transition-transform duration-300">
+                    class="fade-in hover-lift team-member glass-effect rounded-3xl p-8 shadow-lg max-w-xs w-full hover:scale-105 transition-transform duration-300">
                     <img src="https://storage.googleapis.com/cloud-opennews-media/members/soen.png" alt="Avatar de Soën"
-                        class="mx-auto rounded-full w-40 h-40 object-cover mb-6 border-4 texture-artist-border">
-                    <h3 class="text-2xl font-semibold text-white mb-2">Soën</h3>
-                    <p class="texture-artist-color text-lg font-medium">Texture Artist</p>
+                        class="mx-auto rounded-full w-40 h-40 object-cover mb-6 border-4 border-gray-600">
+                    <h3 class="text-2xl font-semibold text-lasd-accent mb-2">Soën</h3>
+                    <p class="text-gray-300 text-lg font-medium">Texture Artist</p>
                 </div>
 
                 <div
-                    class="team-member bg-gray-800 rounded-3xl p-8 shadow-lg max-w-xs w-full hover:scale-105 transition-transform duration-300">
+                    class="fade-in hover-lift team-member glass-effect rounded-3xl p-8 shadow-lg max-w-xs w-full hover:scale-105 transition-transform duration-300">
                     <img src="https://storage.googleapis.com/cloud-opennews-media/members/maax.png" alt="Avatar de Maax"
-                        class="mx-auto rounded-full w-40 h-40 object-cover mb-6 border-4 moderator-border">
-                    <h3 class="text-2xl font-semibold text-white mb-2">Maax</h3>
-                    <p class="moderator-color text-lg font-medium">Modérateur</p>
+                        class="mx-auto rounded-full w-40 h-40 object-cover mb-6 border-4 border-gray-600">
+                    <h3 class="text-2xl font-semibold text-lasd-accent mb-2">Maax</h3>
+                    <p class="text-gray-300 text-lg font-medium">Modérateur</p>
                 </div>
             </div>
         </div>
@@ -540,7 +671,7 @@
                 <div class="fade-in">
                     <div class="flex items-center mb-4">
                         <div class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center mr-3">
-                            <img src="ade033f6aa026c0100098168b0404193.png" alt="Logo du serveur"
+                            <img src="logo.png" alt="Logo du serveur"
                                 class="w-full h-full object-cover rounded-full">
                         </div>
 
@@ -551,16 +682,19 @@
                     </p>
                 </div>
                 <div class="fade-in">
-                    <h4 class="text-lg font-semibold text-white mb-4">Liens Rapides</h4>
+                    <h4 class="text-lg font-semibold text-white mb-4">Liens rapides</h4>
                     <ul class="space-y-2">
-                        <li><a href="#accueil" class="text-gray-400 hover:text-blue-400 transition-colors">Accueil</a>
+                        <li>
+                            <a href="/#accueil" class="text-gray-400 hover:text-blue-400 transition-colors">Accueil</a>
                         </li>
-                        <li><a href="#presentation"
-                                class="text-gray-400 hover:text-blue-400 transition-colors">Présentation</a>
+                        <li>
+                            <a href="/#presentation" class="text-gray-400 hover:text-blue-400 transition-colors">Présentation</a>
                         </li>
-                        <li><a href="#vision" class="text-gray-400 hover:text-blue-400 transition-colors">Vision</a>
+                        <li>
+                            <a href="/#vision" class="text-gray-400 hover:text-blue-400 transition-colors">Vision</a>
                         </li>
-                        <li><a href="#etapes" class="text-gray-400 hover:text-blue-400 transition-colors">Étapes</a>
+                        <li>
+                            <a href="/rules" class="text-gray-400 hover:text-blue-400 transition-colors">Règlement</a>
                         </li>
                     </ul>
                 </div>

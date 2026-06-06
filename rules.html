@@ -11,8 +11,6 @@
     <link rel="stylesheet" href="stylesheets/role-colors.css">
     <script src="scripts/script.js" defer></script>
     <script src="scripts/copyright.js" defer></script>
-    <script src="scripts/discord.js" defer></script>
-    <script src="scripts/cfx.js" defer></script>
 </head>
 
 
@@ -24,7 +22,7 @@
                     <div class="flex-shrink-0 flex items-center">
                         <div class="w-10 h-10 rounded-full flex items-center justify-center mr-3 pulse-glow" style="background-color: #354f52;">
                             <img
-                                src="ade033f6aa026c0100098168b0404193.png"
+                                src="logo.png"
                                 alt="Logo du serveur"
                                 class="w-full h-full object-cover rounded-full"
                             >
@@ -36,10 +34,7 @@
                     <div class="ml-10 flex items-baseline space-x-4">
                         <a
                             href="/#accueil"
-                            class="text-gray-300 px-3 py-2 rounded-md text-sm font-medium transition-colors"
-                            style="color: #e2e8f0;"
-                            onmouseover="this.style.color='#84a98c'"
-                            onmouseout="this.style.color='#e2e8f0'"
+                            class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors"
                         >
                             Accueil
                         </a>
@@ -73,6 +68,12 @@
                         >
                             Contact
                         </a>
+                        <a
+                            href="/rules"
+                            class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                        >
+                            Règlement
+                        </a>
                         <!--<a
                             href="https://mdt.lssd-community.cozedev.com/"
                             class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors"
@@ -96,24 +97,52 @@
         </div>
         <div id="mobile-menu" class="md:hidden hidden glass-effect">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a href="#accueil"
-                    class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors">Accueil</a>
-                <a href="#presentation"
-                    class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors">Présentation</a>
-                <a href="#vision"
-                    class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors">Vision</a>
-                <a href="#etapes"
-                    class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors">Étapes</a>
-                <a href="#contact"
-                    class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
-                <a href="https://mdt.lssd-community.cozedev.com/"
-                    class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors">MDT</a>
-                <a href="#team"
-                    class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors">Équipe</a>
+                <a
+                    href="/#accueil"
+                    class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                >
+                    Accueil
+                </a>
+                <a
+                    href="/#presentation"
+                    class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                >
+                    Présentation
+                </a>
+                <a
+                    href="/#vision"
+                    class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                >
+                    Vision
+                </a>
+                <a
+                    href="/#etapes"
+                    class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                >
+                    Étapes
+                </a>
+                <a
+                    href="/#contact"
+                    class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                >
+                    Contact
+                </a>
+                <a
+                    href="/#team"
+                    class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                >
+                    Équipe
+                </a>
+                <a 
+                    href="/rules"
+                    class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                >
+                    Règlement
+                </a>
             </div>
         </div>
     </nav>
-    <section id="accueil" class="relative min-h-screen flex items-center justify-center gradient-bg overflow-hidden">
+    <section class="relative min-h-screen flex items-center justify-center gradient-bg overflow-hidden">
         <div class="absolute inset-0 bg-black bg-opacity-50"></div>
         <div class="absolute inset-0">
             <div class="floating absolute top-20 left-10 w-2 h-2 lasd-accent rounded-full opacity-70">
@@ -132,7 +161,7 @@
                         class="w-24 h-24 lasd-primary rounded-full flex items-center justify-center mx-auto mb-6 glow-effect overflow-hidden"
                     >
                         <img
-                            src="ade033f6aa026c0100098168b0404193.png"
+                            src="logo.png"
                             alt="Logo de LSSD Community"
                             class="w-full h-full object-cover"
                         />
@@ -156,7 +185,7 @@
     </section>
 
 
-    <section id="vision" class="py-20 bg-gray-800">
+    <section id="definitions" class="py-20 bg-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 fade-in">
                 <h2
@@ -201,7 +230,7 @@
 
 
 
-    <section id="vision" class="py-20 bg-gray-900">
+    <section id="general" class="py-20 bg-gray-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 fade-in">
                 <h2
@@ -264,13 +293,47 @@
         </div>
     </section>
 
+    <section id="community" class="py-20 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2
+                    class="text-4xl font-bold mb-4 text-gradient-lasd">
+                    Règles communautaires
+                </h2>
+            </div>
+            <div class="grid gap-8">
+                <div class="fade-in hover-lift">
+                    <div class="glass-effect rounded-2xl p-8 h-full">
+                        <h3 class="text-xl font-semibold mb-4 text-center text-lasd-accent">
+                            Respect OOC
+                        </h3>
+                        <p class="text-gray-300 text-center">
+                            Le respect OOC envers l'ensemble des membres de la communauté est obligatoire.
+                        </p>
+                    </div>
+                </div>
+                <div class="fade-in hover-lift">
+                    <div class="glass-effect rounded-2xl p-8 h-full">
+                        <h3 class="text-xl font-semibold mb-4 text-center text-lasd-accent">
+                            Pub OOC
+                        </h3>
+                        <p class="text-gray-300 text-center">
+                            L'envoie de publicité non-souhaitée de quelque façon que ce soit à destination des membres de la communauté est interdit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <footer id="contact" class="bg-gray-900 border-t border-gray-800 py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="fade-in">
                     <div class="flex items-center mb-4">
                         <div class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center mr-3">
-                            <img src="ade033f6aa026c0100098168b0404193.png" alt="Logo du serveur"
+                            <img src="logo.png" alt="Logo du serveur"
                                 class="w-full h-full object-cover rounded-full">
                         </div>
 
@@ -283,16 +346,19 @@
                     </p>
                 </div>
                 <div class="fade-in">
-                    <h4 class="text-lg font-semibold text-white mb-4">Liens Rapides</h4>
+                    <h4 class="text-lg font-semibold text-white mb-4">Liens rapides</h4>
                     <ul class="space-y-2">
-                        <li><a href="/#accueil" class="text-gray-400 hover:text-blue-400 transition-colors">Accueil</a>
+                        <li>
+                            <a href="/#accueil" class="text-gray-400 hover:text-blue-400 transition-colors">Accueil</a>
                         </li>
-                        <li><a href="/#presentation"
-                                class="text-gray-400 hover:text-blue-400 transition-colors">Présentation</a>
+                        <li>
+                            <a href="/#presentation" class="text-gray-400 hover:text-blue-400 transition-colors">Présentation</a>
                         </li>
-                        <li><a href="/#vision" class="text-gray-400 hover:text-blue-400 transition-colors">Vision</a>
+                        <li>
+                            <a href="/#vision" class="text-gray-400 hover:text-blue-400 transition-colors">Vision</a>
                         </li>
-                        <li><a href="/#etapes" class="text-gray-400 hover:text-blue-400 transition-colors">Étapes</a>
+                        <li>
+                            <a href="/rules" class="text-gray-400 hover:text-blue-400 transition-colors">Règlement</a>
                         </li>
                     </ul>
                 </div>
