@@ -2,6 +2,7 @@
 
 * {
     font-family: 'Inter', sans-serif;
+    cursor: none;
 }
 
 /* Couleurs LASD personnalisées */
@@ -220,15 +221,15 @@
 }
 
 .custom-cursor {
-    width: 20px;
-    height: 20px;
+    width: 60px;
+    height: 60px;
     border: 2px solid #354f52; /* Vert LASD foncé */
     border-radius: 50%;
     position: fixed;
     pointer-events: none;
     z-index: 9999;
     mix-blend-mode: difference;
-    transition: all 0.3s ease;
+    /*transition: all 0.3s ease;*/
 }
 
 .custom-cursor.cursor-hover {
