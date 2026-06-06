@@ -129,6 +129,7 @@ document.querySelectorAll('button').forEach(button => {
         }, 600);
     });
 });
+/*
 const cursor = document.createElement('div');
 cursor.classList.add('custom-cursor');
 document.body.appendChild(cursor);
@@ -144,6 +145,7 @@ document.querySelectorAll('a, button').forEach(element => {
         cursor.classList.remove('cursor-hover');
     });
 });
+*/
 const preloadImages = [
 ];
 preloadImages.forEach(src => {
