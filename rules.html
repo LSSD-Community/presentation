@@ -4,7 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LSSD Community - Serveur FivePD</title>
+    <title>LSSD Community - Règlement</title>
+    <meta
+        name="description"
+        content="Consultez le règlement officiel de LSSD Community, les règles de comportement, de roleplay et de participation au serveur."
+    />
+    <link rel="canonical" href="https://lssd-community.fr/rules" />
+
+    <meta name="robots" content="index, follow" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:site_name" content="LSSD Community" />
+    <meta property="og:title" content="LSSD Community - Règlement" />
+    <meta
+        property="og:description"
+        content="Consultez le règlement officiel de LSSD Community, les règles de comportement, de roleplay et de participation au serveur."
+    />
+    <meta property="og:url" content="https://lssd-community.fr/" />
+    <meta property="og:image" content="https://lssd-community.fr/logo.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="LSSD Community - Règlement" />
+    <meta
+        name="twitter:description"
+        content="Consultez le règlement officiel de LSSD Community, les règles de comportement, de roleplay et de participation au serveur."
+        />
+    <meta name="twitter:image" content="https://lssd-community.fr/logo.png" />
+
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="stylesheets/style.css">
@@ -15,324 +42,328 @@
 
 
 <body class="bg-gray-900 text-white overflow-x-hidden">
-    <nav class="fixed top-0 w-full z-50 glass-effect">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
-                <div class="flex items-center">
-                    <div class="flex-shrink-0 flex items-center">
-                        <div class="w-10 h-10 rounded-full flex items-center justify-center mr-3 pulse-glow" style="background-color: #354f52;">
+    <header>
+        <nav class="fixed top-0 w-full z-50 glass-effect">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-16">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0 flex items-center">
+                            <div class="w-10 h-10 rounded-full flex items-center justify-center mr-3 pulse-glow" style="background-color: #354f52;">
+                                <img
+                                    src="logo.png"
+                                    alt="Logo du serveur"
+                                    class="w-full h-full object-cover rounded-full"
+                                >
+                            </div>
+                            <span class="text-xl font-bold text-white">LSSD Community</span>
+                        </div>
+                    </div>
+                    <div class="hidden md:block">
+                        <div class="ml-10 flex items-baseline space-x-4">
+                            <a
+                                href="/#accueil"
+                                class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                            >
+                                Accueil
+                            </a>
+                            <a
+                                href="/#presentation"
+                                class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                            >
+                                Présentation
+                            </a>
+                            <a
+                                href="/#vision"
+                                class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                            >
+                                Vision du serveur
+                            </a>
+                            <a
+                                href="/#etapes"
+                                class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                            >
+                                Étapes du projet
+                            </a>
+                            <a
+                                href="/#team"
+                                class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                            >
+                                Équipe
+                            </a>
+                            <a
+                                href="/#contact"
+                                class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                            >
+                                Contact
+                            </a>
+                            <a
+                                href="/rules"
+                                class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                            >
+                                Règlement
+                            </a>
+                            <a
+                                href="https://mdt.lssd-community.fr/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                            >
+                                MDT
+                            </a>
+                        </div>
+                    </div>
+                    <div class="md:hidden">
+                        <button id="mobile-menu-btn" class="text-gray-300 hover:text-white p-2">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu" class="md:hidden hidden glass-effect">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                    <a
+                        href="/#accueil"
+                        class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                    >
+                        Accueil
+                    </a>
+                    <a
+                        href="/#presentation"
+                        class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                    >
+                        Présentation
+                    </a>
+                    <a
+                        href="/#vision"
+                        class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                    >
+                        Vision
+                    </a>
+                    <a
+                        href="/#etapes"
+                        class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                    >
+                        Étapes
+                    </a>
+                    <a
+                        href="/#contact"
+                        class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                    >
+                        Contact
+                    </a>
+                    <a
+                        href="/#team"
+                        class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                    >
+                        Équipe
+                    </a>
+                    <a 
+                        href="/rules"
+                        class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                    >
+                        Règlement
+                    </a>
+                    <a 
+                        href="https://mdt.lssd-community.fr/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                    >
+                        MDT
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="relative min-h-screen flex items-center justify-center gradient-bg overflow-hidden">
+            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+            <div class="absolute inset-0">
+                <div class="floating absolute top-20 left-10 w-2 h-2 lasd-accent rounded-full opacity-70">
+                </div>
+                <div class="floating absolute top-40 right-20 w-3 h-3 lasd-secondary rounded-full opacity-50" style="animation-delay: 1s;">
+                </div>
+                <div class="floating absolute bottom-20 left-20 w-1 h-1 lasd-light rounded-full opacity-80" style="animation-delay: 2s;">
+                </div>
+                <div class="floating absolute bottom-40 right-10 w-2 h-2 lasd-primary rounded-full opacity-60" style="animation-delay: 3s;">
+                </div>
+            </div>
+            <div class="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+                <div class="fade-in">
+                    <div class="mb-8">
+                        <div
+                            class="w-24 h-24 lasd-primary rounded-full flex items-center justify-center mx-auto mb-6 glow-effect overflow-hidden"
+                        >
                             <img
                                 src="logo.png"
-                                alt="Logo du serveur"
-                                class="w-full h-full object-cover rounded-full"
-                            >
+                                alt="Logo de LSSD Community"
+                                class="w-full h-full object-cover"
+                            />
                         </div>
-                        <span class="text-xl font-bold text-white">LSSD Community</span>
+                        <h1 class="text-4xl md:text-6xl font-bold mb-6 text-shadow">
+                            <span class="text-gradient-lasd">
+                                Règlement
+                            </span>
+                        </h1>
+                        <p class="text-xl md:text-2xl mb-8 text-gray-300 max-w-2xl mx-auto">
+                            Le règlement de la communauté est conçu pour garantir une expérience de jeu immersive, respectueuse et authentique pour tous les membres. En rejoignant notre serveur FivePD, vous acceptez de respecter ces règles afin de maintenir un environnement de roleplay de qualité et une communauté soudée.
+                        </p>
                     </div>
                 </div>
-                <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-4">
-                        <a
-                            href="/#accueil"
-                            class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors"
-                        >
-                            Accueil
-                        </a>
-                        <a
-                            href="/#presentation"
-                            class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors"
-                        >
-                            Présentation
-                        </a>
-                        <a
-                            href="/#vision"
-                            class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors"
-                        >
-                            Vision du serveur
-                        </a>
-                        <a
-                            href="/#etapes"
-                            class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors"
-                        >
-                            Étapes du projet
-                        </a>
-                        <a
-                            href="/#team"
-                            class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors"
-                        >
-                            Équipe
-                        </a>
-                        <a
-                            href="/#contact"
-                            class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors"
-                        >
-                            Contact
-                        </a>
-                        <a
-                            href="/rules"
-                            class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors"
-                        >
-                            Règlement
-                        </a>
-                        <a
-                            href="https://mdt.lssd-community.fr/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors"
-                        >
-                            MDT
-                        </a>
-                    </div>
-                </div>
-                <div class="md:hidden">
-                    <button id="mobile-menu-btn" class="text-gray-300 hover:text-white p-2">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16M4 18h16"></path>
-                        </svg>
-                    </button>
+            </div>
+            <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+                <div class="w-6 h-10 border-2 border-lasd-accent rounded-full flex justify-center">
+                    <div class="w-1 h-3 lasd-accent rounded-full mt-2 animate-pulse"></div>
                 </div>
             </div>
-        </div>
-        <div id="mobile-menu" class="md:hidden hidden glass-effect">
-            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a
-                    href="/#accueil"
-                    class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors"
-                >
-                    Accueil
-                </a>
-                <a
-                    href="/#presentation"
-                    class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors"
-                >
-                    Présentation
-                </a>
-                <a
-                    href="/#vision"
-                    class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors"
-                >
-                    Vision
-                </a>
-                <a
-                    href="/#etapes"
-                    class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors"
-                >
-                    Étapes
-                </a>
-                <a
-                    href="/#contact"
-                    class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors"
-                >
-                    Contact
-                </a>
-                <a
-                    href="/#team"
-                    class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors"
-                >
-                    Équipe
-                </a>
-                <a 
-                    href="/rules"
-                    class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors"
-                >
-                    Règlement
-                </a>
-                <a 
-                    href="https://mdt.lssd-community.fr/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="text-gray-300 hover-text-lasd-accent px-3 py-2 rounded-md text-sm font-medium transition-colors"
-                >
-                    MDT
-                </a>
-            </div>
-        </div>
-    </nav>
-    <section class="relative min-h-screen flex items-center justify-center gradient-bg overflow-hidden">
-        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-        <div class="absolute inset-0">
-            <div class="floating absolute top-20 left-10 w-2 h-2 lasd-accent rounded-full opacity-70">
-            </div>
-            <div class="floating absolute top-40 right-20 w-3 h-3 lasd-secondary rounded-full opacity-50" style="animation-delay: 1s;">
-            </div>
-            <div class="floating absolute bottom-20 left-20 w-1 h-1 lasd-light rounded-full opacity-80" style="animation-delay: 2s;">
-            </div>
-            <div class="floating absolute bottom-40 right-10 w-2 h-2 lasd-primary rounded-full opacity-60" style="animation-delay: 3s;">
-            </div>
-        </div>
-        <div class="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
-            <div class="fade-in">
-                <div class="mb-8">
-                    <div
-                        class="w-24 h-24 lasd-primary rounded-full flex items-center justify-center mx-auto mb-6 glow-effect overflow-hidden"
-                    >
-                        <img
-                            src="logo.png"
-                            alt="Logo de LSSD Community"
-                            class="w-full h-full object-cover"
-                        />
-                    </div>
-                    <h1 class="text-4xl md:text-6xl font-bold mb-6 text-shadow">
-                        <span class="text-gradient-lasd">
-                            Règlement
-                        </span>
-                    </h1>
-                    <p class="text-xl md:text-2xl mb-8 text-gray-300 max-w-2xl mx-auto">
-                        Le règlement de la communauté est conçu pour garantir une expérience de jeu immersive, respectueuse et authentique pour tous les membres. En rejoignant notre serveur FivePD, vous acceptez de respecter ces règles afin de maintenir un environnement de roleplay de qualité et une communauté soudée.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-            <div class="w-6 h-10 border-2 border-lasd-accent rounded-full flex justify-center">
-                <div class="w-1 h-3 lasd-accent rounded-full mt-2 animate-pulse"></div>
-            </div>
-        </div>
-    </section>
+        </section>
 
 
-    <section id="definitions" class="py-20 bg-gray-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16 fade-in">
-                <h2
-                    class="text-4xl font-bold mb-4 text-gradient-lasd">
-                    Définitions
-                </h2>
+        <section id="definitions" class="py-20 bg-gray-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16 fade-in">
+                    <h2
+                        class="text-4xl font-bold mb-4 text-gradient-lasd">
+                        Définitions
+                    </h2>
+                </div>
+                <div class="grid gap-8">
+                    <article class="fade-in hover-lift">
+                        <div class="glass-effect rounded-2xl p-8 h-full">
+                            <h3 class="text-xl font-semibold mb-4 text-center text-lasd-accent">
+                                HRP / OOC
+                            </h3>
+                            <p class="text-gray-300 text-center">
+                                Concerne tout ce qui est en dehors du roleplay, comme les discussions sur le serveur, les problèmes techniques ou les interactions sociales entre les membres.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="fade-in hover-lift">
+                        <div class="glass-effect rounded-2xl p-8 h-full">
+                            <h3 class="text-xl font-semibold mb-4 text-center text-lasd-accent">
+                                RP / IC
+                            </h3>
+                            <p class="text-gray-300 text-center">
+                                Concerne tout ce qui se passe dans le cadre du roleplay, comme les interactions entre les personnages, les actions entreprises par les joueurs et les événements qui se déroulent dans l'univers du serveur.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="fade-in hover-lift">
+                        <div class="glass-effect rounded-2xl p-8 h-full">
+                            <h3 class="text-xl font-semibold mb-4 text-center text-lasd-accent">
+                                PNJ / NPC
+                            </h3>
+                            <p class="text-gray-300 text-center">
+                                Un personnage non-joueur (Non-Player Character) utilisé pour enrichir l'univers du serveur et interagir avec les joueurs.
+                            </p>
+                        </div>
+                    </article>
+                </div>
             </div>
-            <div class="grid gap-8">
-                <div class="fade-in hover-lift">
-                    <div class="glass-effect rounded-2xl p-8 h-full">
-                        <h3 class="text-xl font-semibold mb-4 text-center text-lasd-accent">
-                            HRP / OOC
-                        </h3>
-                        <p class="text-gray-300 text-center">
-                            Concerne tout ce qui est en dehors du roleplay, comme les discussions sur le serveur, les problèmes techniques ou les interactions sociales entre les membres.
-                        </p>
-                    </div>
-                </div>
-                <div class="fade-in hover-lift">
-                    <div class="glass-effect rounded-2xl p-8 h-full">
-                        <h3 class="text-xl font-semibold mb-4 text-center text-lasd-accent">
-                            RP / IC
-                        </h3>
-                        <p class="text-gray-300 text-center">
-                            Concerne tout ce qui se passe dans le cadre du roleplay, comme les interactions entre les personnages, les actions entreprises par les joueurs et les événements qui se déroulent dans l'univers du serveur.
-                        </p>
-                    </div>
-                </div>
-                <div class="fade-in hover-lift">
-                    <div class="glass-effect rounded-2xl p-8 h-full">
-                        <h3 class="text-xl font-semibold mb-4 text-center text-lasd-accent">
-                            PNJ / NPC
-                        </h3>
-                        <p class="text-gray-300 text-center">
-                            Un personnage non-joueur (Non-Player Character) utilisé pour enrichir l'univers du serveur et interagir avec les joueurs.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
 
 
-    <section id="general" class="py-20 bg-gray-900">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16 fade-in">
-                <h2
-                    class="text-4xl font-bold mb-4 text-gradient-lasd">
-                    Règles générales
-                </h2>
+        <section id="general" class="py-20 bg-gray-900">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16 fade-in">
+                    <h2
+                        class="text-4xl font-bold mb-4 text-gradient-lasd">
+                        Règles générales
+                    </h2>
+                </div>
+                <div class="grid gap-8">
+                    <article class="fade-in hover-lift">
+                        <div class="glass-effect rounded-2xl p-8 h-full">
+                            <h3 class="text-xl font-semibold mb-4 text-center text-lasd-accent">
+                                Cheat
+                            </h3>
+                            <p class="text-gray-300 text-center">
+                                Tout cheat, mod menu, injecteur ou logiciel donnant un avantage injuste est strictement interdit.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="fade-in hover-lift">
+                        <div class="glass-effect rounded-2xl p-8 h-full">
+                            <h3 class="text-xl font-semibold mb-4 text-center text-lasd-accent">
+                                Freekill
+                            </h3>
+                            <p class="text-gray-300 text-center">
+                                Le freekill est interdit. Il consiste à tuer avec un ou plusieurs joueurs sans raison ou pour une raison incohérente ou inutile.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="fade-in hover-lift">
+                        <div class="glass-effect rounded-2xl p-8 h-full">
+                            <h3 class="text-xl font-semibold mb-4 text-center text-lasd-accent">
+                                Considération PNJ
+                            </h3>
+                            <p class="text-gray-300 text-center">
+                                Les PNJ doivent être considérés comme des personnes à part entière et de façon cohérente.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="fade-in hover-lift">
+                        <div class="glass-effect rounded-2xl p-8 h-full">
+                            <h3 class="text-xl font-semibold mb-4 text-center text-lasd-accent">
+                                Metagaming
+                            </h3>
+                            <p class="text-gray-300 text-center">
+                                Le metagaming est interdit. Il consiste à utiliser des informations OOC dans le cadre IC.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="fade-in hover-lift">
+                        <div class="glass-effect rounded-2xl p-8 h-full">
+                            <h3 class="text-xl font-semibold mb-4 text-center text-lasd-accent">
+                                Powergaming
+                            </h3>
+                            <p class="text-gray-300 text-center">
+                                Le powergaming est interdit. Il consiste à réaliser des actions irréalisables dans la vraie vie.
+                            </p>
+                        </div>
+                    </article>
+                </div>
             </div>
-            <div class="grid gap-8">
-                <div class="fade-in hover-lift">
-                    <div class="glass-effect rounded-2xl p-8 h-full">
-                        <h3 class="text-xl font-semibold mb-4 text-center text-lasd-accent">
-                            Cheat
-                        </h3>
-                        <p class="text-gray-300 text-center">
-                            Tout cheat, mod menu, injecteur ou logiciel donnant un avantage injuste est strictement interdit.
-                        </p>
-                    </div>
-                </div>
-                <div class="fade-in hover-lift">
-                    <div class="glass-effect rounded-2xl p-8 h-full">
-                        <h3 class="text-xl font-semibold mb-4 text-center text-lasd-accent">
-                            Freekill
-                        </h3>
-                        <p class="text-gray-300 text-center">
-                            Le freekill est interdit. Il consiste à tuer avec un ou plusieurs joueurs sans raison ou pour une raison incohérente ou inutile.
-                        </p>
-                    </div>
-                </div>
-                <div class="fade-in hover-lift">
-                    <div class="glass-effect rounded-2xl p-8 h-full">
-                        <h3 class="text-xl font-semibold mb-4 text-center text-lasd-accent">
-                            Considération PNJ
-                        </h3>
-                        <p class="text-gray-300 text-center">
-                            Les PNJ doivent être considérés comme des personnes à part entière et de façon cohérente.
-                        </p>
-                    </div>
-                </div>
-                <div class="fade-in hover-lift">
-                    <div class="glass-effect rounded-2xl p-8 h-full">
-                        <h3 class="text-xl font-semibold mb-4 text-center text-lasd-accent">
-                            Metagaming
-                        </h3>
-                        <p class="text-gray-300 text-center">
-                            Le metagaming est interdit. Il consiste à utiliser des informations OOC dans le cadre IC.
-                        </p>
-                    </div>
-                </div>
-                <div class="fade-in hover-lift">
-                    <div class="glass-effect rounded-2xl p-8 h-full">
-                        <h3 class="text-xl font-semibold mb-4 text-center text-lasd-accent">
-                            Powergaming
-                        </h3>
-                        <p class="text-gray-300 text-center">
-                            Le powergaming est interdit. Il consiste à réaliser des actions irréalisables dans la vraie vie.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="community" class="py-20 bg-gray-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16 fade-in">
-                <h2
-                    class="text-4xl font-bold mb-4 text-gradient-lasd">
-                    Règles communautaires
-                </h2>
-            </div>
-            <div class="grid gap-8">
-                <div class="fade-in hover-lift">
-                    <div class="glass-effect rounded-2xl p-8 h-full">
-                        <h3 class="text-xl font-semibold mb-4 text-center text-lasd-accent">
-                            Respect OOC
-                        </h3>
-                        <p class="text-gray-300 text-center">
-                            Le respect OOC envers l'ensemble des membres de la communauté est obligatoire.
-                        </p>
-                    </div>
+        <section id="community" class="py-20 bg-gray-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16 fade-in">
+                    <h2
+                        class="text-4xl font-bold mb-4 text-gradient-lasd">
+                        Règles communautaires
+                    </h2>
                 </div>
-                <div class="fade-in hover-lift">
-                    <div class="glass-effect rounded-2xl p-8 h-full">
-                        <h3 class="text-xl font-semibold mb-4 text-center text-lasd-accent">
-                            Pub OOC
-                        </h3>
-                        <p class="text-gray-300 text-center">
-                            L'envoie de publicité non-souhaitée de quelque façon que ce soit à destination des membres de la communauté est interdit.
-                        </p>
-                    </div>
+                <div class="grid gap-8">
+                    <article class="fade-in hover-lift">
+                        <div class="glass-effect rounded-2xl p-8 h-full">
+                            <h3 class="text-xl font-semibold mb-4 text-center text-lasd-accent">
+                                Respect OOC
+                            </h3>
+                            <p class="text-gray-300 text-center">
+                                Le respect OOC envers l'ensemble des membres de la communauté est obligatoire.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="fade-in hover-lift">
+                        <div class="glass-effect rounded-2xl p-8 h-full">
+                            <h3 class="text-xl font-semibold mb-4 text-center text-lasd-accent">
+                                Pub OOC
+                            </h3>
+                            <p class="text-gray-300 text-center">
+                                L'envoie de publicité non-souhaitée de quelque façon que ce soit à destination des membres de la communauté est interdit.
+                            </p>
+                        </div>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
-
+        </section>
+    </main>
 
     <footer id="contact" class="bg-gray-900 border-t border-gray-800 py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -388,7 +419,6 @@
             </div>
         </div>
     </footer>
-    </head>
 </body>
 
 </html>
